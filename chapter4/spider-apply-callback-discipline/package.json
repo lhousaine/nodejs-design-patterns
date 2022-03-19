@@ -1,0 +1,24 @@
+{
+  "name": "web-spider",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "OUARHOU Lhoussaine",
+  "license": "ISC",
+  "dependencies": {
+    "mkdir": "0.0.2",
+    "mkdirp": "^0.5.5",
+    "slug": "^1.1.0",
+    "superagent": "^5.3.1"
+  },
+  "devDependencies": {}
+}
