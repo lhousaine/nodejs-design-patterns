@@ -1,0 +1,17 @@
+{
+  "name": "parallel-limiting-concurrency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parallel-stream-limit.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "split": "^1.0.1",
+    "superagent": "^7.1.1"
+  }
+}
