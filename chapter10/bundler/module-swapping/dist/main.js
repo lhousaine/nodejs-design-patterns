@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _say
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sayHello\": () => (/* binding */ sayHello)\n/* harmony export */ });\n/* harmony import */ var nunjucks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! nunjucks */ \"./node_modules/nunjucks/browser/nunjucks.js\");\n\nvar template = \"<h1>Hello <i>{{ name }}</i></h1>\";\nfunction sayHello(name) {\n  return nunjucks__WEBPACK_IMPORTED_MODULE_0__.renderString(template, {\n    name: name\n  });\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/say-hello.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"sayHello\": () => (/* binding */ sayHello)\n/* harmony export */ });\n/* harmony import */ var nunjucks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! nunjucks */ \"./node_modules/nunjucks/browser/nunjucks.js\");\n\nvar template = \"<h1>Hello <i>{{ name }}</i></h1>\";\nfunction sayHello(name) {\n  if (typeof window !== \"undefined\" && window.document) {\n    // client-side code\n    return nunjucks__WEBPACK_IMPORTED_MODULE_0__.renderString(template, {\n      name: name\n    });\n  } // Node.js code\n\n\n  return \"Hello \\x1B[1m\".concat(name, \"\\x1B[0m\");\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/say-hello.js?");
 
 /***/ })
 
