@@ -1,5 +1,5 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
-
+const webpack = require('webpack');
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -25,9 +25,10 @@ const config = {
       template: "index.html",
     }),
     new MiniCssExtractPlugin(),
-    new webpack.DefinePlugin({
-      __BROWSER__: true,
-    }),
+    new webpack.NormalModuleReplacementPlugin(
+      /src\/say-hello\.js$/,
+      path.resolve(__dirname, "src", "say-hello-browser.js")
+    ),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
