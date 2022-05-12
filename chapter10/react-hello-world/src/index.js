@@ -1,14 +1,20 @@
-import react from "react";
-import ReactDOM from "react-dom";
+import react from 'react'
+import ReactDOM from 'react-dom'
 
-const h = react.createElement; // (1)
+const h = react.createElement // ①
 
-class Hello extends react.Component {
-  render() {
-    return h("h1", null, ["Hello ", this.props.name || "World"]);
+class Hello extends react.Component { // ②
+  render () { // ③
+    return h('h1', null, [ // ④
+      'Hello ',
+      this.props.name || 'World'
+    ])
   }
 }
-ReactDOM.render(
-  h(Hello, { name: "React" }),
-  document.getElementsByTagName("body")[0]
-);
+
+ReactDOM.render( // ⑤
+  h(Hello, { name: 'React' }),
+  document.getElementsByTagName('body')[0]
+)
+
+
