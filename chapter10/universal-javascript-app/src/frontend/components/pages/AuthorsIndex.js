@@ -1,8 +1,6 @@
 import react from "react";
 import htm from "htm";
-
 import { Link } from "react-router-dom";
-
 import { Header } from "../Header.js";
 import { authors } from "../../../data/authors.js";
 
@@ -17,9 +15,7 @@ export class AuthorsIndex extends react.Component {
           (author) =>
             html`<div key=${author.id}>
               <p>
-                <${Link} to="${`/author/${author.id}`}">
-                  ${author.name}
-                </${Link}>
+                <${Link} to="${`/author/${author.id}`}">${author.name}</${Link}>
               </p>
             </div>`
         )}

@@ -1,6 +1,5 @@
 import react from "react";
 import htm from "htm";
-
 import { FourOhFour } from "./FourOhFour.js";
 import { Header } from "../Header.js";
 import { authors } from "../../../data/authors.js";
@@ -12,9 +11,14 @@ export class Author extends react.Component {
     const author = authors.find(
       (author) => author.id === this.props.match.params.authorId
     );
+
     if (!author) {
-      return html`<${FourOhFour} error="Author not found" />`;
+      return html`<${FourOhFour}
+        staticContext=${this.props.staticContext}
+        error="Author not found"
+      />`;
     }
+
     return html`<div>
       <${Header} />
       <h2>${author.name}</h2>

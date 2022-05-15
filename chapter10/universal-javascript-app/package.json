@@ -24,6 +24,9 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "esm": "^3.2.25",
+    "fastify": "^3.29.0",
+    "fastify-static": "^4.7.0",
     "htm": "^3.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
