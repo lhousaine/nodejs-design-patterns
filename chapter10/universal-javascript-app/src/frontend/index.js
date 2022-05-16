@@ -6,7 +6,7 @@ import { App } from "./App.js";
 
 const html = htm.bind(react.createElement);
 
-reactDOM.render(
+reactDOM.hydrate(
   html`<${BrowserRouter}><${App} /></${BrowserRouter}>`,
   document.getElementById("root")
 );
