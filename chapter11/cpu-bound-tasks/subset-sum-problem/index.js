@@ -1,9 +1,10 @@
 import { createServer } from "http";
-import { SubsetSum } from "./subsetSum.js";
+// import { SubsetSum } from "./subsetSum.js";
+import { SubsetSum } from './subsetSumDefer.js'
 
 createServer((req, res) => {
   const url = new URL(req.url, "http://localhost");
-  
+
   if (url.pathname !== "/subsetSum") {
     res.writeHead(200);
     return res.end("I'm alive!\n");
