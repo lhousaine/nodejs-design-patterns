@@ -1,0 +1,20 @@
+{
+  "name": "hashsum-cracker-with-zeromq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "collector.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "delay": "^5.0.0",
+    "indexed-string-variation": "^1.0.3",
+    "ioredis": "^5.0.6",
+    "zeromq": "^6.0.0-beta.6"
+  }
+}
