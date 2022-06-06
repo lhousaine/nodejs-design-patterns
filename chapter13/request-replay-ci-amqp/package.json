@@ -1,0 +1,18 @@
+{
+  "name": "request-replay-ci-amqp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "amqpReply.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.0",
+    "delay": "^5.0.0",
+    "nanoid": "^3.3.4"
+  }
+}
